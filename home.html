@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Homepage - Group Chat</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header class="header">
+            <h2>💬 Group Chat</h2>
+            <button onclick="logout()" class="logout">Logout</button>
+        </header>
+
+        <!-- BUAT GRUP -->
+        <div class="card">
+            <h3>Buat Grup Baru</h3>
+            <input type="text" id="groupName" placeholder="Nama grup">
+            <button onclick="createGroup()">Buat Grup</button>
+        </div>
+
+        <!-- DAFTAR GRUP -->
+        <div class="card">
+            <h3>Daftar Grup</h3>
+            <ul id="groupList" class="group-list"></ul>
+        </div>
+
+    </div>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+
+    <script src="js/firebase.js"></script>
+    <script src="js/home.js"></script>
+
+</body>
+
+</html>

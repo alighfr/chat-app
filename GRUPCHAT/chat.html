@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chat Grup</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="chat-container">
+
+        <!-- HEADER -->
+        <div class="chat-header">
+            <button onclick="goHome()">⬅</button>
+            <span id="groupTitle">Nama Grup</span>
+        </div>
+
+        <!-- PESAN -->
+        <div id="messages" class="chat-messages"></div>
+
+        <!-- INPUT -->
+        <div class="chat-input">
+            <input type="text" id="messageInput" placeholder="Ketik pesan...">
+            <button onclick="sendMessage()">➤</button>
+        </div>
+
+    </div>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+
+    <script src="js/firebase.js"></script>
+    <script src="js/chat.js"></script>
+
+</body>
+
+</html>
