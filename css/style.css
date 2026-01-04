@@ -10,7 +10,7 @@
 body {
     font-family: "Segoe UI", Tahoma, sans-serif;
     background: linear-gradient(135deg, #667eea, #764ba2);
-    min-height: 100vh;
+    min-height: 100dvh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -175,7 +175,6 @@ body {
     text-overflow: ellipsis;
 }
 
-/* tombol masuk khusus */
 .btn-masuk {
     width: auto !important;
     padding: 8px 18px;
@@ -194,7 +193,7 @@ body {
 .chat-container {
     width: 100%;
     max-width: 420px;
-    height: 100vh;
+    height: 100dvh;
     background: #fff;
     display: flex;
     flex-direction: column;
@@ -260,7 +259,7 @@ body {
     word-break: break-word;
 }
 
-/* BARIS BAWAH (PESAN + WAKTU) */
+/* BARIS BAWAH */
 .message-footer {
     display: flex;
     justify-content: space-between;
@@ -326,6 +325,5 @@ body {
     .container,
     .chat-container {
         border-radius: 0;
-        height: 100vh;
     }
 }
